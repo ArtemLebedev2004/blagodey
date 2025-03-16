@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+.typography html {
+  font-family: "Montserrat";
+  /* font-size: var(--text-base);
+  color: var(--color-gray-700); */
+}
