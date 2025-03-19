@@ -2,12 +2,41 @@
 /* @import "./typography.css"; */
 
 @font-face {
-  font-family: "MontserratA";
-  src: url(./fonts/MontserratAlternates-Regular.ttf);
+  font-family: "Montserrat Alternates";
+  src: local("Montserrat Alternates"),
+    url(./fonts/MontserratAlternates-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: local("Montserrat Alternates"),
+    url(./fonts/MontserratAlternates-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: local("Montserrat Alternates"),
+    url(./fonts/MontserratAlternates-Bold.ttf);
+  font-weight: bold;
 }
 
 html {
-  font-family: "MontserratA";
+  font-family: "Montserrat Alternates";
+
+}
+
+@theme {
+  --animate-opacity: opacity 0.5s ease-in-out;
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 /* @import './base.css'; */
