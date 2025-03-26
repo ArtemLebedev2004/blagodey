@@ -2,29 +2,40 @@
 /* @import "./typography.css"; */
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: local("Montserrat Alternates"),
-    url(./fonts/MontserratAlternates-Regular.ttf);
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+    url(./fonts/GILROY-REGULAR.OTF);
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: local("Montserrat Alternates"),
-    url(./fonts/MontserratAlternates-SemiBold.ttf);
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+    url(./fonts/GILROY-SEMIBOLD.OTF);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: local("Montserrat Alternates"),
-    url(./fonts/MontserratAlternates-Bold.ttf);
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+    url(./fonts/GILROY-BOLD.OTF);
   font-weight: bold;
 }
 
-html {
-  font-family: "Montserrat Alternates";
+@font-face {
+  font-family: "Alumni Sans";
+  src: local("Alumni Sans"),
+    url(./fonts/AlumniSans-SemiBold.ttf);
+  font-weight: 600;
+}
 
+html {
+  font-family: "Gilroy";
+  background: url(../assets/img/theme_sm.svg);
+}
+
+h1, h2, h3 {
+  font-family: "Alumni Sans";
 }
 
 @theme {
