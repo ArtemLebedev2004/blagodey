@@ -11,6 +11,14 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy"),
+    url(./fonts/Gilroy-RegularItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
     url(./fonts/GILROY-SEMIBOLD.OTF);
   font-weight: 600;
 }
@@ -47,9 +55,22 @@ h1, h2, h3 {
     100% {
       opacity: 1;
     }
-  }
+  };
 }
 
+@theme {
+  --animate-opacity-blur: opacity-blur 0.5s ease-in-out;
+  @keyframes opacity-blur {
+    from {
+      backdrop-filter: blur(0px);
+      opacity: 0;
+    }
+    to {
+      backdrop-filter: blur(8px);
+      opacity: 1;
+    }
+  };
+}
 /* @import './base.css'; */
 
 /* #app {
